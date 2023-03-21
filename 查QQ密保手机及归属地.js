@@ -5,7 +5,7 @@ import lodash from 'lodash'
 //仿写，第一次写javascript不是很会
 
 //1.定义命名规则
-export class example extends plugin {
+export class chashoujihao extends plugin {
     constructor(){
         super({
             /**功能名称*/
