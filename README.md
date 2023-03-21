@@ -6,5 +6,4 @@
 ```
 cd Yunzai-Bot/
 git clone --deepth=1 https://github.com/Ewan-wzz/chashoujihao.git ./plugins/example/
-
 ```
