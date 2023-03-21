@@ -4,5 +4,5 @@
 ## 使用
 ```
 cd Yunzai-Bot/
-git clone --deepth=1 https://github.com/Ewan-wzz/chashoujihao.git ./plugins/example/
+git clone --depth=1 https://github.com/Ewan-wzz/chashoujihao.git ./plugins/example/查手机号及归属地
 ```
