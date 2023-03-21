@@ -1,4 +1,5 @@
-import { segment} from "oicq";
+import plugin from '../../lib/plugins/plugin.js'
+import {segment} from "oicq";
 import fetch from "node-fetch";
 import lodash from 'lodash'
 //一个老社工库查一下密保手机，归属地
