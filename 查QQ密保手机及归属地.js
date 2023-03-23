@@ -39,11 +39,7 @@ export class chashoujihao extends plugin {
             let url = `https://zy.xywlapi.cc/qqapi?qq=${i}`;
             let response = await fetch(url);
             let res = await response.json();
-            let message = `QQ:${i}\n` +
-                `查询状态：${segment.text(res.message)}\n` +
-                `绑定的号码:${segment.text(res.phone)}\n` +
-                `地区:${segment.text(res.phonediqu)}\n` +
-                `不要做坏事哦!`;
+            let message = `QQ:${i}\n`+`查询状态：${segment.text(res.message)}\n` +`绑定的号码:${segment.text(res.phone)}\n`+`地区:${segment.text(res.phonediqu)}\n`+`不要做坏事哦!`;
              await e.reply(`@${e.user_id}`, message);
         }
         return true; //返回true阻挡消息不再往下
