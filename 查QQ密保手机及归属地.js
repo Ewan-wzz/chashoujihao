@@ -28,7 +28,6 @@ export class chashoujihao extends plugin {
     }
     //2.执行方法
     async chashoujihao(e) {
-        const at = e.message.find(item => item.type === 'at' && item.qq === e.self_id);
         let qq = e.message.filter(item => item.type == 'at')?.map(item => item?.qq)
         console.log(qq);
         if (lodash.isEmpty(qq)) {
@@ -39,9 +38,7 @@ export class chashoujihao extends plugin {
         let response = await fetch(url);
         let res = await response.json();
         let rendmsg = []
-        if (qq == e.user_id) {
-            rendmsg.push(segment.at(qq))
-        }
+        rendmsg.push(segment.at(e.user_id))
         rendmsg.push(`\nQQ: ${qq}\n查询状态：${res.message}\n绑定的号码: ${res.phone}\n地区:${res.phonediqu}\n不要做坏事哦!`);
         //发出消息 
         this.reply(rendmsg);            
