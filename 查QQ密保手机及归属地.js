@@ -44,7 +44,7 @@ export class chashoujihao extends plugin {
                 `绑定的号码:${segment.text(res.phone)}\n` +
                 `地区:${segment.text(res.phonediqu)}\n` +
                 `不要做坏事哦!`;
-             await e.reply(`@${qq}`, message);
+             await e.reply(`@${e.user_id}`, message);
         }
         return true; //返回true阻挡消息不再往下
     }
