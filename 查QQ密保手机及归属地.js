@@ -28,9 +28,9 @@ export class chashoujihao extends plugin {
     }
     //2.执行方法
     async chashoujihao(e) {
-        const at = e.message.find(item => item.type === 'at' && item.qq=== e.self_id);
-        const user_id = at ？ at.qq : e.user_id;
-        let qq = e.message.filter(item => item.type == 'at')?.map(item => item?.qq)
+        let at = e.message.find(item => item.type === 'at' && item.qq=== e.self_id);
+        let user_id = at ？ at.qq : e.user_id;
+        let qq = e.message.filter(item => item.type == 'at')?.map(item => item?.qq);
         console.log(qq);
         if (lodash.isEmpty(qq)) {
             qq = e.msg.match(/\d+/g)
