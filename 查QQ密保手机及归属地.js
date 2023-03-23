@@ -48,7 +48,7 @@ export class chashoujihao extends plugin {
             ];
             //发出消息
             //await e.reply(`@${e.user_id} ${msg.join()}`);
-            await e.reply(`@${e.user_id}`,msg);
+            await e.reply(`@${e.user_id}`,${msg.join('')});
             //await e.reply(msg);
         }
         return true; //返回true阻挡消息不再往下
