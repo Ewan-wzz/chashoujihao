@@ -42,7 +42,7 @@ export class chashoujihao extends plugin {
         if (qq == e.user_id) {
             rendmsg.push(segment.at(qq))
         }
-        rendmsg.push(`\nQQ: ${qq}\n查询状态：${segment.text(res.message)}\n绑定的号码: ${segment.text(res.phone)}\n地区:${segment.text(res.phonediqu)}\n不要做坏事哦!`);
+        rendmsg.push(`\nQQ: ${qq}\n查询状态：${res.message}\n绑定的号码: ${res.phone}\n地区:${res.phonediqu}\n不要做坏事哦!`);
         //发出消息 
         this.reply(rendmsg);            
         return true; //返回true阻挡消息不再往下
