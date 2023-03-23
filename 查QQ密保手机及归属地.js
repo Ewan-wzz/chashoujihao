@@ -41,9 +41,9 @@ export class chashoujihao extends plugin {
             let res = await response.json();
             let msg = [
                 `QQ:${i}\n`,
-                "查询状态：", JSON.stringify(segment.text(res.message.text)), "\n",
-                "绑定的号码:", JSON.stringify(segment.text(res.phone.text)), "\n",
-                "地区:", JSON.stringify(segment.text(res.phonediqu.text)), "\n",
+                "查询状态：", JSON.stringify(segment.text(res.message)), "\n",
+                "绑定的号码:", JSON.stringify(segment.text(res.phone)), "\n",
+                "地区:", JSON.stringify(segment.text(res.phonediqu)), "\n",
                 "不要做坏事哦!"
             ];
             //发出消息
