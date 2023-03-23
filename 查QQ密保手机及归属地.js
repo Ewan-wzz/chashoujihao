@@ -35,7 +35,7 @@ export class chashoujihao extends plugin {
             qq = e.msg.match(/\d+/g)
         }
         if (!qq) qq = [e.user_id]
-        let url = `https://zy.xywlapi.cc/qqapi?qq=${i}`;
+        let url = `https://zy.xywlapi.cc/qqapi?qq=${qq}`;
         let response = await fetch(url);
         let res = await response.json();
         let rendmsg = []
