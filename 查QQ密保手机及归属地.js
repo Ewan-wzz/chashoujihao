@@ -46,7 +46,7 @@ export class chashoujihao extends plugin {
                 "不要做坏事哦!"
             ];
             //发出消息
-            await e.reply(msg);
+            await e.reply(msg,event.user_id);
         }
         return true; //返回true阻挡消息不再往下
     }
