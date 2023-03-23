@@ -47,7 +47,7 @@ export class chashoujihao extends plugin {
                 "不要做坏事哦!"
             ];
             //发出消息
-            await e.reply(`@${e.user_id} ${msg.map(segment.text).join('')}`);
+            await e.reply(`@${e.user_id} ${msg.join('')}`);
             //await e.reply(`@${e.user_id}`);
             //await e.reply(msg);
         }
