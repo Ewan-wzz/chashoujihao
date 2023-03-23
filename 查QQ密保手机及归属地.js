@@ -29,7 +29,6 @@ export class chashoujihao extends plugin {
     //2.执行方法
     async chashoujihao(e) {
         const at = e.message.find(item => item.type === 'at' && item.qq === e.self_id);
-        //const user_id = at ？ at.qq : e.user_id;
         let qq = e.message.filter(item => item.type == 'at')?.map(item => item?.qq)
         console.log(qq);
         if (lodash.isEmpty(qq)) {
@@ -48,8 +47,7 @@ export class chashoujihao extends plugin {
                 "不要做坏事哦!"
             ];
             //发出消息
-            //await e.reply('@${user_id} ${msg}');
-            await e.reply(msg);
+            await e.reply('@${e.user_id} ${msg}');
         }
         return true; //返回true阻挡消息不再往下
     }
