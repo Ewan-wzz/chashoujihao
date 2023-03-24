@@ -6,3 +6,4 @@
 cd Yunzai-Bot/
 git clone --depth=1 https://github.com/Ewan-wzz/chashoujihao.git ./plugins/chahsoujihao
 ```
+### 或者直接塞进`plugins/example`里更方便
